@@ -117,6 +117,48 @@ body {
   box-shadow: inset 0 0 0 10px #faf2f0;
   color: #faf2f0;
 }
+.item:nth-child(13) { 
+  background: #b9c2cb url(assets/autumn.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #e2d587;
+  color: #e2d587;
+}
+.item:nth-child(14) { 
+  background: #d8bd54 url(assets/Butterscotch.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #e5e7d2;
+  color: #e5e7d2;
+}
+.item:nth-child(15) { 
+  background: #f1bbd3 url(assets/SpringFever.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #66b001;
+  color: #66b001;
+}
+.item:nth-child(16) { 
+  background: #ffffff url(assets/StarSwirl.png) center no-repeat;
+  background-size: 95%;
+  box-shadow: inset 0 0 0 10px #e74c9a;
+  color: #e74c9a;
+}
+.item:nth-child(17) { 
+  background: #e389a5 url(assets/SweetSummertime.png) center no-repeat;
+  background-size: 95%;
+  box-shadow: inset 0 0 0 10px #1b82a1;
+  color: #1b82a1;
+}
+.item:nth-child(18) { 
+  background: #a0c6af url(assets/WinterSnow.png) center no-repeat;
+  background-size: 95%;
+  box-shadow: inset 0 0 0 10px #f3eded;
+  color: #f3eded;
+}
+.item:nth-child(19) { 
+  background: #ec97c0 url(assets/DazzleSurprise.png) center no-repeat;
+  background-size: 85%;
+  box-shadow: inset 0 0 0 10px #732b97;
+  color: #732b97;
+}
 .item:nth-child(even) { 
   transform: scaleX(1.03) rotateY(14deg); 
 }
