@@ -15,11 +15,40 @@
     <div class="item item7">Rainbow Dash</div>
     <div class="item item8">Sunny Daze</div>
     <div class="item item9">Sweet Berry</div>
-    <div class="item item11">Wysteria</div>
-    <div class="item item12">Tink-a-Tink-a-Too</div>
-    <div class="item item13">Fluttershy</div>
+    <div class="item item10">Wysteria</div>
+    <div class="item item11">Tink-a-Tink-a-Too</div>
+    <div class="item item12">Fluttershy</div>
   </div>
-<script src="index.js">
+<script>
+const slider = document.querySelector('.items');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return; 
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 6;
+  slider.scrollLeft = scrollLeft - walk;
+});
 </script>
 
   </body>
