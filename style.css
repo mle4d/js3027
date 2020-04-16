@@ -237,6 +237,18 @@ h3 {
   box-shadow: inset 0 0 0 10px #ff9252;
   color: #ff9252;
 }
+.item:nth-child(9):active { 
+  background: #e68bd0 url(assets/sweetberrybackcard.jpg) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #74dbd7;
+  color: #74dbd7;
+}
+.item:nth-child(10):active { 
+  background: #c186ca url(assets/WysteriaBackcardStory.jpg) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #e0bbda;
+  color: #e0bbda;
+}
 .item:nth-child(13):active { 
   background: #b9c2cb url(assets/autumnbackcard.png) center no-repeat;
   background-size: 92%;
