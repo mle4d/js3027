@@ -187,6 +187,25 @@ h3 {
   position: relative;
   z-index: +1;
 }
+.item:nth-child(1):active { 
+  background: #cc80b1 url(assets/KimonoBackcardStory.jpg) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #693798;
+  color: #693798;
+  margin-left: 5%;
+}
+.item:nth-child(2):active { 
+  background: #c1e9cf url(assets/MintyBackcardStory.jpg) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #f892b7;
+  color: #f892b7;
+}
+.item:nth-child(3):active { 
+  background: #e689d0 url(assets/PinkiePieBackcardStory.jpg) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #fbebf5;
+  color: #fbebf5;
+}
 .item:nth-child(13):active { 
   background: #b9c2cb url(assets/autumnbackcard.png) center no-repeat;
   background-size: 92%;
