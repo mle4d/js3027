@@ -66,6 +66,7 @@ h3 {
   background-size: 90%;
   box-shadow: inset 0 0 0 10px #693798;
   color: #693798;
+  margin-left: 5%;
 }
 .item:nth-child(2) { 
   background: #c1e9cf url(assets/minty.png) center no-repeat;
@@ -178,6 +179,7 @@ h3 {
   box-shadow: inset 0 0 0 10px #732b97;
   color: #732b97;
   font-size: 25px;
+  margin-right: 10%;
 }
 .item:nth-child(even) { 
   transform: scaleX(1.03) rotateY(9deg); 
