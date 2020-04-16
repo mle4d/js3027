@@ -49,19 +49,19 @@ body {
   background: #cc80b1 url(assets/Kimono.png) center no-repeat;
   background-size: 90%;
   box-shadow: inset 0 0 0 10px #693798;
-  color: #ffffff;
+  color: #693798;
 }
 .item:nth-child(2) { 
   background: #c1e9cf url(assets/minty.png) center no-repeat;
   background-size: 90%;
   box-shadow: inset 0 0 0 10px #f892b7;
-  color: #ffffff;
+  color: #f892b7;
 }
 .item:nth-child(3) { 
   background: #e689d0 url(assets/pinkiepie.png) center no-repeat;
   background-size: 90%;
   box-shadow: inset 0 0 0 10px #fbebf5;
-  color: #ffffff;
+  color: #fbebf5;
 }
 .item:nth-child(even) { 
   transform: scaleX(1.03) rotateY(14deg); 
