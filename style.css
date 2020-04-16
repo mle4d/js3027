@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  background: rgb(232,133,198);
+  background: linear-gradient(90deg, rgba(232,133,198,1) 0%, rgba(174,64,187,1) 25%, rgba(147,156,215,1) 50%, rgba(152,206,216,1) 75%, rgba(247,239,141,1) 100%);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
