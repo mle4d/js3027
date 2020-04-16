@@ -249,6 +249,13 @@ h3 {
   box-shadow: inset 0 0 0 10px #e0bbda;
   color: #e0bbda;
 }
+.item:nth-child(11):active { 
+  background: #b5b2e1 url(assets/tinkabackcard.jpeg) center no-repeat;
+  background-size: 95%;
+  box-shadow: inset 0 0 0 10px #d44098;
+  color: #d44098;
+  font-size: 25px;
+}
 .item:nth-child(13):active { 
   background: #b9c2cb url(assets/autumnbackcard.png) center no-repeat;
   background-size: 92%;
