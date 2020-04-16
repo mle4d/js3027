@@ -45,6 +45,24 @@ body {
   border-radius: 20px;
 }
 
+.item:nth-child(1) { 
+  background: #cc80b1 url(assets/Kimono.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #693798;
+  color: #ffffff;
+}
+.item:nth-child(2) { 
+  background: #c1e9cf url(assets/minty.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #f892b7;
+  color: #ffffff;
+}
+.item:nth-child(3) { 
+  background: #e689d0 url(assets/pinkiepie.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #fbebf5;
+  color: #ffffff;
+}
 .item:nth-child(even) { 
   transform: scaleX(1.03) rotateY(14deg); 
 }
