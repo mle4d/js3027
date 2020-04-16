@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cherry+Cream+Soda|&display=swap');
 html {
   box-sizing: border-box;
   background: rgb(232,133,198);
@@ -14,6 +15,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+h3 {
+  font-family: 'Cherry Cream Soda', cursive;
+  background: linear-gradient(90deg, rgba(247,239,141,1)0%, rgba(232,133,198,1) 25%, rgba(174,64,187,1) 50%, rgba(147,156,215,1) 75%, rgba(152,206,216,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3em;
+  position: fixed;
+  top: -4%;
+  left: 5%;
+}
 .items {
   height: 90vh;
   padding-top: 70px;
@@ -23,15 +35,13 @@ body {
   user-select: none;
   cursor: pointer;
   position: relative;
-  font-size: 0;
   perspective: 500px;
+  font-family: 'Cherry Cream Soda', cursive;
 }
 
 .items.active {
-  background: rgba(255,255,255,0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  transform: scale(1);
 }
 
 .item {
@@ -44,7 +54,10 @@ body {
   line-height: 100px;
   border-radius: 20px;
 }
-
+.item p {
+  align-self: flex-end;
+  color: transparent;
+}
 .item:nth-child(1) { 
   background: #cc80b1 url(assets/Kimono.png) center no-repeat;
   background-size: 90%;
@@ -80,6 +93,7 @@ body {
   background-size: 90%;
   box-shadow: inset 0 0 0 10px #d2299c;
   color: #d2299c;
+  font-size: 25px;
 }
 .item:nth-child(7) { 
   background: #b2cae6 url(assets/RainbowDash.png) center no-repeat;
@@ -110,6 +124,7 @@ body {
   background-size: 95%;
   box-shadow: inset 0 0 0 10px #d44098;
   color: #d44098;
+  font-size: 25px;
 }
 .item:nth-child(12) { 
   background: #e5bbcf url(assets/Fluttershy.png) center no-repeat;
@@ -146,6 +161,7 @@ body {
   background-size: 95%;
   box-shadow: inset 0 0 0 10px #1b82a1;
   color: #1b82a1;
+  font-size: 20px;
 }
 .item:nth-child(18) { 
   background: #a0c6af url(assets/WinterSnow.png) center no-repeat;
@@ -158,10 +174,22 @@ body {
   background-size: 85%;
   box-shadow: inset 0 0 0 10px #732b97;
   color: #732b97;
+  font-size: 25px;
 }
 .item:nth-child(even) { 
-  transform: scaleX(1.03) rotateY(14deg); 
+  transform: scaleX(1.03) rotateY(9deg); 
 }
 .item:nth-child(odd) { 
-  transform: scaleX(1.03) rotateY(-14deg); 
+  transform: scaleX(1.03) rotateY(-9deg); 
+}
+.item:active { 
+  transform: scaleX(1.5) scaleY(1.3) rotateY(0deg); 
+  position: relative;
+  z-index: +1;
+}
+.item:nth-child(13):active { 
+  background: #ffffff url(assets/300px-AutumnSkyeBackcard.jpg) center bottom no-repeat;
+  background-size: 100%;
+  box-shadow: inset 0 0 0 10px #e2d587;
+  color: transparent;
 }
