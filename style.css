@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   background: rgb(232,133,198);
   background: linear-gradient(90deg, rgba(232,133,198,1) 0%, rgba(174,64,187,1) 25%, rgba(147,156,215,1) 50%, rgba(152,206,216,1) 75%, rgba(247,239,141,1) 100%);
+  overflow-y: hidden;
 }
 
 *, *:before, *:after {
@@ -14,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overscroll-behavior: none;
 }
 h3 {
   font-family: 'Cherry Cream Soda', cursive;
@@ -27,10 +29,11 @@ h3 {
   left: 5%;
 }
 .items {
-  height: 90vh;
+  height: 80vh;
   padding-top: 70px;
   width: 110vw;
   overflow-x: scroll;
+  overflow-y: visible;
   white-space: nowrap;
   user-select: none;
   cursor: pointer;
@@ -182,17 +185,21 @@ h3 {
 .item:nth-child(odd) { 
   transform: scaleX(1.03) rotateY(-9deg); 
 }
+.items:active {
+  overflow: visible;
+}
 .item:active { 
   transform: scaleX(1.5) scaleY(1.3) rotateY(0deg); 
   position: relative;
   z-index: +1;
+  transition: ease-in-out .5s;
 }
 .item:nth-child(1):active { 
   background: #cc80b1 url(assets/KimonoBackcardStory.jpg) center no-repeat;
   background-size: 90%;
   box-shadow: inset 0 0 0 10px #693798;
   color: #693798;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 .item:nth-child(2):active { 
   background: #c1e9cf url(assets/MintyBackcardStory.jpg) center no-repeat;
