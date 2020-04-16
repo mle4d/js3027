@@ -231,6 +231,12 @@ h3 {
   box-shadow: inset 0 0 0 10px #846ac1;
   color: #846ac1;
 }
+.item:nth-child(8):active { 
+  background: #ffffff url(assets/sunnydazebackcard.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #ff9252;
+  color: #ff9252;
+}
 .item:nth-child(13):active { 
   background: #b9c2cb url(assets/autumnbackcard.png) center no-repeat;
   background-size: 92%;
