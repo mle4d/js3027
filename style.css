@@ -225,6 +225,12 @@ h3 {
   color: #d2299c;
   font-size: 25px;
 }
+.item:nth-child(7):active { 
+  background: #b2cae6 url(assets/RainbowDashBackcardStory.jpg) center no-repeat;
+  background-size: 90%;
+  box-shadow: inset 0 0 0 10px #846ac1;
+  color: #846ac1;
+}
 .item:nth-child(13):active { 
   background: #b9c2cb url(assets/autumnbackcard.png) center no-repeat;
   background-size: 92%;
